@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Vatsal Kansagara, portfolio Vatsal Kansagara, Data Scientist,Web Developer, portfolio website, Vatsal Kansagara website, Founder CodeIN" />
-    <meta name="description" content="Welcome to Vatsal's Portfolio. Passionate Web & App Developer. Freelancer Data Scientist Machine Learning Ethusiast." />
+    <title>Vatsal Kansagara | Full Stack Developer (React, PHP, MySQL)</title>
+    <meta name="description" content="Portfolio of Vatsal Kansagara, a Full Stack Developer from Ahmedabad working with React.js, PHP and MySQL. Builder of TikitDesk, a multi-tenant SaaS helpdesk platform." />
+    <meta name="keywords" content="Vatsal Kansagara, Full Stack Developer, React Developer, PHP Developer, MySQL, TikitDesk, Web Developer Ahmedabad, portfolio" />
+    <meta name="author" content="Vatsal Kansagara" />
+
+    <!-- Social preview (WhatsApp, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vatsal Kansagara | Full Stack Developer" />
+    <meta property="og:description" content="React.js, PHP and MySQL developer. Builder of TikitDesk, a multi-tenant SaaS helpdesk platform." />
+    <meta property="og:url" content="https://vatsalkansagara.vercel.app/" />
+    <meta property="og:image" content="https://vatsalkansagara.vercel.app/images/og-image.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="images/favicon.png" type="image/x-png">
-    <title> Vatsal Kansagara </title>
-    
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("tKcnAF73jMw0tRWFB");
-   })();
-</script>
+    <link id="favicon" rel="icon" href="images/favicon.png" type="image/png">
+
+    <!-- EmailJS (contact form). Keys and IDs are set at the top of js/script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-<body oncontextmenu="return false">
+<body>
 
 
 <!-- navbar starts -->
 <header>
-        <a href="" class="logo"><i class="fab fa-node-js"></i> Vatsal</a>
+        <a href="#home" class="logo"><i class="fab fa-node-js"></i> Vatsal</a>
 
         <div id="menu" class="fas fa-bars"></div>
         <nav class="navbar">
@@ -54,19 +60,23 @@
 
     <div class="content">
     <h3>Hi There,<br/> I'm Vatsal <span>Kansagara</span></h3>
-    <p>i am into <span class="typing-text"></span></p>
+    <p>I'm a <span class="typing-text"></span></p>
+    <div class="hero-cta">
+        <a href="#work" class="btn cta-primary"><span>View My Work</span> <i class="fas fa-arrow-down"></i></a>
+        <a href="VATSAL_KANSAGARA_RESUME.pdf" target="_blank" rel="noopener" class="btn cta-ghost"><i class="fas fa-download"></i> <span>Resume</span></a>
+    </div>
     <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" href="https://www.linkedin.com/in/vatsal-kansagara-1ba190287/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" href="https://github.com/VatsalKansagara/" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="twitter" href="https://x.com/vatsalpatel1208" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="instagram" href="https://www.instagram.com/vatsal_kansagara12/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a></li>
-          <li><a class="gmail" href="mailto:vatsalkansagara246@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li> 
+          <li><a class="linkedin" href="https://www.linkedin.com/in/vatsal-kansagara-1ba190287/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" href="https://github.com/VatsalKansagara/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a class="twitter" href="https://x.com/vatsalpatel1208" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="instagram" href="https://www.instagram.com/vatsal_kansagara12/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="gmail" href="mailto:vatsalkansagara246@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
         </ul>
       </div>
     </div>
 <div class="image">
-    <img draggable="false" class="tilt" src="images/potrait.png" alt="">
+    <img draggable="false" class="tilt" src="images/potrait.webp" alt="Illustrated portrait of Vatsal Kansagara">
 </div>
 </section>
 <!-- hero section ends -->
@@ -75,31 +85,32 @@
 <!-- about section starts -->
 <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
+
     <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="images/hero1.png" alt="">
+        <img draggable="false" class="tilt" src="images/hero1.webp" alt="Illustrated portrait of Vatsal Kansagara waving" loading="lazy">
     </div>
     <div class="content">
         <h3>I'm Vatsal</h3>
-        <span class="tag">Passionate Web Developer </span>
-        <p>Hi, I'm Vatsal Kansagara, a dedicated Full Stack Developer with a focus on building high-performance and visually stunning web applications.<br>
-          <br>I am a self-taught developer with a strong foundation in React.js, PHP, and MySQL. My expertise lies in converting complex designs into pixel-perfect code while ensuring robust back-end logic. I love solving real-world problems through clean code and innovative technology.
-        </p>
-        
+        <span class="tag">Full Stack Developer · Ahmedabad, Gujarat</span>
+        <p>I build web products end to end: React on the front, PHP and MySQL at the back. I'm a Jr. Web Developer at Sky Productivity, and outside work I'm building <strong>TikitDesk</strong>, a multi-tenant helpdesk SaaS, along with a CRM, an ERP, an HRMS and a job portal on the same stack.</p>
+        <p>I like turning messy business workflows into simple, fast screens, and I care about clean code, secure logins and pages that load quickly.</p>
+
+        <div class="stats">
+            <div class="stat"><b data-count="5">0</b><span>SaaS products built</span></div>
+            <div class="stat"><b data-count="10" data-suffix="+">0</b><span>Projects built</span></div>
+            <div class="stat"><b data-count="2" data-suffix="+">0</b><span>Years of experience</span></div>
+        </div>
+
         <div class="box-container">
-            <!-- <div class="box">
-              <p><span> age: </span> 21</p>
-            </div> -->
             <div class="box">
-              <p><span> email : </span> vatsalkansagara246@gmail.com</p>
-            
+              <p><span>Email:</span> vatsalkansagara246@gmail.com</p>
             </div>
         </div>
-        
+
         <div class="resumebtn">
-            <a href="VATSAL_KANASAGARA_RESUME.pdf" target="_blank" class="btn"><span>Resume</span>
+            <a href="VATSAL_KANSAGARA_RESUME.pdf" target="_blank" rel="noopener" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -108,119 +119,45 @@
     </div>
 </section>
 <!-- about section ends -->
+
+
 <!-- skills section starts -->
 <section class="skills" id="skills">
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
 
   <div class="container">
-    <div class="row" id="skillsContainer">
-      <div class="bar">
-        <div class="info">
-          <img src="images/html-5--v1.png" alt="skill" />
-          <span>HTML5</span>
-        </div>
-      </div>
 
-      <div class="bar">
-        <div class="info">
-          <img src="images/css3.png" alt="skill" />
-          <span>CSS3</span>
-        </div>
-      </div>
-      
-      <div class="bar">
-        <div class="info">
-          <img src="images/javascript--v1.png" alt="skill" />
-          <span>JavaScript</span>
-        </div>
-      </div>
-      
-      <div class="bar">
-        <div class="info">
-          <img src="images/jquery.png" alt="skill" />
-          <span>JQuery</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/react_js.png" alt="skill" />
-          <span>ReactJS</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/express_js.png" alt="skill" />
-          <span>ExpressJS</span>
-        </div>
-      </div>
-      
-      <div class="bar">
-        <div class="info">
-          <img src="images/bootstrap.png" alt="skill" />
-          <span>Bootstrap</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/php-logo.png" alt="skill" />
-          <span>PHP</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/c.png" alt="skill" />
-          <span>C Language</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/c-plus-plus-logo.png" alt="skill" />
-          <span>C++</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/mysql-logo.png" alt="skill" />
-          <span>MYSQL</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/github.png" alt="skill" />
-          <span>GitHub</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/git.png" alt="skill" />
-          <span>Git</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/netlify.png" alt="skill" />
-          <span>Netlify</span>
-        </div>
-      </div>
-
-      <div class="bar">
-        <div class="info">
-          <img src="images/teamwork.png" alt="skill" />
-          <span>Team Work</span>
-        </div>
-      </div>
+    <h3 class="skill-group">Frontend</h3>
+    <div class="row">
+      <div class="bar"><div class="info"><img src="images/html-5--v1.png" alt="HTML5 logo" /><span>HTML5</span></div></div>
+      <div class="bar"><div class="info"><img src="images/css3.png" alt="CSS3 logo" /><span>CSS3</span></div></div>
+      <div class="bar"><div class="info"><img src="images/javascript--v1.png" alt="JavaScript logo" /><span>JavaScript (ES6+)</span></div></div>
+      <div class="bar"><div class="info"><img src="images/react_js.png" alt="React logo" /><span>React.js</span></div></div>
+      <div class="bar"><div class="info"><img src="images/tailwindcss.svg" alt="Tailwind CSS logo" /><span>Tailwind CSS</span></div></div>
+      <div class="bar"><div class="info"><img src="images/bootstrap.png" alt="Bootstrap logo" /><span>Bootstrap</span></div></div>
+      <div class="bar"><div class="info"><img src="images/jquery.png" alt="jQuery logo" /><span>jQuery</span></div></div>
+      <div class="bar"><div class="info"><i class="fas fa-exchange-alt" aria-hidden="true"></i><span>AJAX</span></div></div>
     </div>
-</div>
+
+    <h3 class="skill-group">Backend &amp; Database</h3>
+    <div class="row">
+      <div class="bar"><div class="info"><img src="images/php-logo.png" alt="PHP logo" /><span>PHP</span></div></div>
+      <div class="bar"><div class="info"><img src="images/mysql-logo.png" alt="MySQL logo" /><span>MySQL</span></div></div>
+      <div class="bar"><div class="info"><i class="fas fa-network-wired" aria-hidden="true"></i><span>REST APIs</span></div></div>
+      <div class="bar"><div class="info"><img src="images/json.svg" alt="JSON logo" /><span>JSON</span></div></div>
+    </div>
+
+    <h3 class="skill-group">Tools &amp; Deployment</h3>
+    <div class="row">
+      <div class="bar"><div class="info"><img src="images/git.png" alt="Git logo" /><span>Git</span></div></div>
+      <div class="bar"><div class="info"><img src="images/github.png" alt="GitHub logo" /><span>GitHub</span></div></div>
+      <div class="bar"><div class="info"><img src="images/figma.svg" alt="Figma logo" /><span>Figma</span></div></div>
+      <div class="bar"><div class="info"><img src="images/vercel.svg" alt="Vercel logo" /><span>Vercel</span></div></div>
+      <div class="bar"><div class="info"><img src="images/netlify.png" alt="Netlify logo" /><span>Netlify</span></div></div>
+    </div>
+
+  </div>
 </section>
 <!-- skills section ends -->
 
@@ -237,7 +174,7 @@
     <div class="box">
         <div class="content">
           <h3>Bachelor of Science in Information Technology</h3>
-          <p>saurashtra university - Rajkot</p>
+          <p>Saurashtra University – Rajkot</p>
           <h4>2021-2024 | Completed</h4>
         </div>
     </div>
@@ -245,7 +182,7 @@
     <div class="box">
       <div class="content">
         <h3>Higher Secondary School Certificate (HSC)</h3>
-        <p>oxford school of science - Amreli</p>
+        <p>Oxford School of Science – Amreli</p>
         <h4>2019-2021 | Completed</h4>
       </div>
     </div>
@@ -260,217 +197,209 @@
 
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
-  <div class="box-container">
-    <!-- <div class="box tilt">
-      <div class="image-wrapper react">
-          <img draggable="false" src="images/react-ai.png" alt="" />
-      </div>
-      <div class="content">
-        <div class="tag">
-        <h3>React Ai Tool</h3>
-        </div>
-        <div class="desc">
-          <p>A modern React-based AI Chat Assistant that provides instant, intelligent answers to any question, just like Gemini.</p>
-          <div class="btns">
-            <a href="https://react-ai-repo.vercel.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/react-ai-repo" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div> -->
+  <div class="box-container showcase">
 
-    <div class="box tilt">
-      <div class="image-wrapper php">
-          <img draggable="false" src="images/tikit_tool.png" alt="" />
+    <div class="box showcase-card featured">
+      <span class="featured-badge"><i class="fas fa-star"></i> Featured</span>
+      <div class="carousel" data-carousel>
+        <div class="car-track">
+          <img draggable="false" src="images/projects/tikitdesk/01.webp" alt="TikitDesk - landing page" loading="lazy" />
+          <img draggable="false" src="images/projects/tikitdesk/02.webp" alt="TikitDesk - dashboard" loading="lazy" />
+          <img draggable="false" src="images/projects/tikitdesk/03.webp" alt="TikitDesk - tickets" loading="lazy" />
+          <img draggable="false" src="images/projects/tikitdesk/04.webp" alt="TikitDesk - ticket detail" loading="lazy" />
+          <img draggable="false" src="images/projects/tikitdesk/05.webp" alt="TikitDesk - live chat" loading="lazy" />
+          <img draggable="false" src="images/projects/tikitdesk/06.webp" alt="TikitDesk - reports" loading="lazy" />
+          <img draggable="false" src="images/projects/tikitdesk/07.webp" alt="TikitDesk - admin panel" loading="lazy" />
+        </div>
+        <button type="button" class="car-btn prev" aria-label="Previous screenshot"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="car-btn next" aria-label="Next screenshot"><i class="fas fa-chevron-right"></i></button>
+        <span class="car-count">1 / 7</span>
+        <div class="car-dots"></div>
       </div>
       <div class="content">
-        <div class="tag">
-        <h3>Tikit-Tool Project</h3>
-        </div>
+        <div class="tag"><h3>TikitDesk</h3></div>
+        <div class="chips"><span>PHP</span><span>MySQL</span><span>Multi-tenant</span><span>SaaS</span></div>
         <div class="desc">
-          <p>A comprehensive task management system featuring a real-time ticketing dashboard, integrated chat, and an advanced admin panel for streamlined team collaboration.</p>
+          <p>Multi-tenant SaaS helpdesk with a real-time ticketing dashboard, live chat, SLA tracking, role-based access, payments and an advanced admin panel.</p>
           <div class="btns">
-            <a href="https://tikitdesk.com/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://tikitdesk.com/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            <a href="https://tikitdesk.com/" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View Live</a>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="box showcase-card">
+      
+      <div class="carousel" data-carousel>
+        <div class="car-track">
+          <img draggable="false" src="images/projects/crm/01.webp" alt="Gujarat Business Platform (CRM) - screen 1" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/02.webp" alt="Gujarat Business Platform (CRM) - screen 2" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/03.webp" alt="Gujarat Business Platform (CRM) - screen 3" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/04.webp" alt="Gujarat Business Platform (CRM) - screen 4" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/05.webp" alt="Gujarat Business Platform (CRM) - screen 5" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/06.webp" alt="Gujarat Business Platform (CRM) - screen 6" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/07.webp" alt="Gujarat Business Platform (CRM) - screen 7" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/08.webp" alt="Gujarat Business Platform (CRM) - screen 8" loading="lazy" />
+          <img draggable="false" src="images/projects/crm/09.webp" alt="Gujarat Business Platform (CRM) - screen 9" loading="lazy" />
+        </div>
+        <button type="button" class="car-btn prev" aria-label="Previous screenshot"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="car-btn next" aria-label="Next screenshot"><i class="fas fa-chevron-right"></i></button>
+        <span class="car-count">1 / 9</span>
+        <div class="car-dots"></div>
+      </div>
+      <div class="content">
+        <div class="tag"><h3>Gujarat Business Platform (CRM)</h3></div>
+        <div class="chips"><span>PHP</span><span>MySQL</span><span>Multi-tenant</span><span>CRM</span></div>
+        <div class="desc">
+          <p>Multi-tenant CRM built for Gujarat businesses: leads, customers, follow-ups and team access, each business in its own workspace.</p>
+          <div class="btns">
+            <a href="https://crm.tikitdesk.com/" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View Live</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box showcase-card">
+      
+      <div class="carousel" data-carousel>
+        <div class="car-track">
+          <img draggable="false" src="images/projects/saree-erp/01.webp" alt="Saree ERP - screen 1" loading="lazy" />
+          <img draggable="false" src="images/projects/saree-erp/02.webp" alt="Saree ERP - screen 2" loading="lazy" />
+          <img draggable="false" src="images/projects/saree-erp/03.webp" alt="Saree ERP - screen 3" loading="lazy" />
+          <img draggable="false" src="images/projects/saree-erp/04.webp" alt="Saree ERP - screen 4" loading="lazy" />
+          <img draggable="false" src="images/projects/saree-erp/05.webp" alt="Saree ERP - screen 5" loading="lazy" />
+        </div>
+        <button type="button" class="car-btn prev" aria-label="Previous screenshot"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="car-btn next" aria-label="Next screenshot"><i class="fas fa-chevron-right"></i></button>
+        <span class="car-count">1 / 5</span>
+        <div class="car-dots"></div>
+      </div>
+      <div class="content">
+        <div class="tag"><h3>Saree ERP</h3></div>
+        <div class="chips"><span>ERP</span><span>Orders</span><span>Admin panel</span></div>
+        <div class="desc">
+          <p>ERP for saree businesses to manage orders and day-to-day operations from one admin panel.<!-- TODO: add exact features / tech stack here --></p>
+          <div class="btns">
+            <a href="https://saree-erp.tikitdesk.com/" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View Live</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box showcase-card">
+      
+      <div class="carousel" data-carousel>
+        <div class="car-track">
+          <img draggable="false" src="images/projects/hrms/01.webp" alt="HRMS - login page" loading="lazy" />
+          <img draggable="false" src="images/projects/hrms/02.webp" alt="HRMS - dashboard" loading="lazy" />
+          <img draggable="false" src="images/projects/hrms/03.webp" alt="HRMS - employees" loading="lazy" />
+          <img draggable="false" src="images/projects/hrms/04.webp" alt="HRMS - attendance" loading="lazy" />
+          <img draggable="false" src="images/projects/hrms/05.webp" alt="HRMS - leave requests" loading="lazy" />
+          <img draggable="false" src="images/projects/hrms/06.webp" alt="HRMS - payroll" loading="lazy" />
+          <img draggable="false" src="images/projects/hrms/07.webp" alt="HRMS - settings" loading="lazy" />
+        </div>
+        <button type="button" class="car-btn prev" aria-label="Previous screenshot"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="car-btn next" aria-label="Next screenshot"><i class="fas fa-chevron-right"></i></button>
+        <span class="car-count">1 / 7</span>
+        <div class="car-dots"></div>
+      </div>
+      <div class="content">
+        <div class="tag"><h3>HRMS (Attendance &amp; Payroll)</h3></div>
+        <div class="chips"><span>HRMS</span><span>Attendance</span><span>Leave</span><span>Payroll</span></div>
+        <div class="desc">
+          <p>HR system for small companies: employee records, daily check-in, monthly attendance reports, leave approvals, payroll with PDF salary slips, and configurable work rules and holidays.</p>
+          <div class="btns">
+            <a href="https://hrms.tikitdesk.com/" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View Live</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box showcase-card coming-soon">
+      <span class="featured-badge soon-badge"><i class="fas fa-clock"></i> Coming Soon</span>
+      <div class="carousel" data-carousel>
+        <div class="car-track">
+          <img draggable="false" src="images/projects/job-portal/01.webp" alt="Job Portal - screen 1" loading="lazy" />
+          <img draggable="false" src="images/projects/job-portal/02.webp" alt="Job Portal - screen 2" loading="lazy" />
+          <img draggable="false" src="images/projects/job-portal/03.webp" alt="Job Portal - screen 3" loading="lazy" />
+          <img draggable="false" src="images/projects/job-portal/04.webp" alt="Job Portal - screen 4" loading="lazy" />
+          <img draggable="false" src="images/projects/job-portal/05.webp" alt="Job Portal - screen 5" loading="lazy" />
+          <img draggable="false" src="images/projects/job-portal/06.webp" alt="Job Portal - screen 6" loading="lazy" />
+          <img draggable="false" src="images/projects/job-portal/07.webp" alt="Job Portal - screen 7" loading="lazy" />
+        </div>
+        <button type="button" class="car-btn prev" aria-label="Previous screenshot"><i class="fas fa-chevron-left"></i></button>
+        <button type="button" class="car-btn next" aria-label="Next screenshot"><i class="fas fa-chevron-right"></i></button>
+        <span class="car-count">1 / 7</span>
+        <div class="car-dots"></div>
+      </div>
+      <div class="content">
+        <div class="tag"><h3>Job Portal</h3></div>
+        <div class="chips"><span>React</span><span>PHP</span><span>MySQL</span></div>
+        <div class="desc">
+          <p>Job portal for candidates and recruiters, aimed at Surat employers: job listings, applications and a recruiter panel. Going live soon.</p>
+          <div class="btns">
+            <!-- JOB PORTAL GOES LIVE: 1) remove class "coming-soon" from the card above  2) delete the <span class="btn disabled"> line  3) uncomment the <a> line -->
+            <!-- <a href="https://jobportal.tikitdesk.com/" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View Live</a> -->
+            <span class="btn disabled" aria-disabled="true"><i class="fas fa-clock"></i> Live tomorrow</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h3 class="more-title"><i class="fas fa-shopping-cart"></i> E-commerce</h3>
+
+  <div class="box-container more-projects" id="more-projects">
+
     <div class="box tilt">
       <div class="image-wrapper react">
-          <img draggable="false" src="images/e-commerce-zepatro.png" alt="" />
+          <img draggable="false" src="images/e-commerce-zepatro.webp" alt="Zaptro e-commerce home page screenshot" loading="lazy" />
       </div>
       <div class="content">
         <div class="tag">
-        <h3>E-commerce Wbsite</h3>
+        <h3>Zaptro E-commerce</h3>
         </div>
         <div class="desc">
           <p>Zaptro: A responsive E-commerce app built with React and Tailwind, featuring dynamic API-based filtering and Context API for seamless cart management.</p>
           <div class="btns">
-            <a href="https://e-commerce-zaptro.vercel.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/e-commerce-new" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            <a href="https://e-commerce-zaptro.vercel.app/" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/VatsalKansagara/e-commerce-new" class="btn" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="box tilt">
-      <div class="image-wrapper php">
-          <img draggable="false" src="images/hotel-project.png" alt="" />
-      </div>
-      <div class="content">
-        <div class="tag">
-        <h3>Hotel Management Project</h3>
-        </div>
-        <div class="desc">
-          <p>A complete booking engine with secure payments, room filters, and a dynamic admin control panel.</p>
-          <div class="btns">
-            <a href="http://hotel-management-demo.free.nf/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="http://hotel-management-demo.free.nf/" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--
+      ============ NEW PROJECT CARD TEMPLATE ============
+      Copy this whole block, paste it below, remove the comment markers and edit the text.
+      Screenshot: put a WebP image (about 1000px wide) in the images folder.
+      Badge: use class "php" or "react" on image-wrapper (or delete the wrapper div and use a plain <img>).
+      If the code repository is private, delete the Code button.
 
-    <div class="box tilt">
-      <div class="image-wrapper react">
-          <img draggable="false" src="images/e-commerce.png" alt="" />
-      </div>
-      <div class="content">
-        <div class="tag">
-        <h3>E-commerce Wbsite</h3>
+      <div class="box tilt">
+        <div class="image-wrapper react">
+            <img draggable="false" src="images/YOUR-IMAGE.webp" alt="Describe the screenshot" loading="lazy" />
         </div>
-        <div class="desc">
-          <p>Developed a dynamic E-commerce platform using React.js, featuring automated product page generation and a seamless integrated cart management system.</p>
-          <div class="btns">
-            <a href="https://e-commerce-clothshop.vercel.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/e-commerce" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+        <div class="content">
+          <div class="tag">
+          <h3>Project Name</h3>
+          </div>
+          <div class="desc">
+            <p>One or two lines about what you built and the tech you used.</p>
+            <div class="btns">
+              <a href="https://LIVE-LINK" class="btn" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/VatsalKansagara/REPO" class="btn" target="_blank" rel="noopener">Code <i class="fas fa-code"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    -->
 
-    <div class="box tilt">
-      <div class="image-wrapper php">
-          <img draggable="false" src="images/project-5.png" alt="" />
-      </div>
-      <div class="content">
-        <div class="tag">
-        <h3>Discuss App Page</h3>
-        </div>
-        <div class="desc">
-          <p>Created a PHP-based Q&A platform with responsive UI, secure authentication, and user-driven question–answer interactions</p>
-          <div class="btns">
-            <a href="http://discusswithfriend.free.nf/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/php_projects/tree/main/discuss" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box tilt">
-      <div class="image-wrapper react">
-          <img draggable="false" src="images/country-project.png" alt="" />
-      </div>
-      <div class="content">
-        <div class="tag">
-        <h3>Country Details Project</h3>
-        </div>
-        <div class="desc">
-          <p>A responsive React app featuring real-time country data, dynamic sub-pages, and a seamless dark/light mode toggle.</p>
-          <div class="btns">
-            <a href="https://countryapi-details.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/country-api" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box tilt">
-      <img draggable="false" src="images/charge-up.jpg" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Charge Up Home page</h3>
-        </div>
-        <div class="desc">
-          <p>Optimized images, minified CSS/JS files, and a streamlined codebase guarantee quick page load times</p>
-          <div class="btns">
-            <a href="https://charge-up.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/charge-up" class="btn" target="_blank"><i class="fas fa-code"></i> Code</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-    <div class="box tilt">
-      <img draggable="false" src="images/pure-haevest.jpg" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Pure Harvest Home Page</h3>
-        </div>
-        <div class="desc">
-          <p>Implemented a sticky, minimalist navigation bar and utilized a clean, responsive layout to ensure seamless viewing across all screen sizes</p>
-          <div class="btns">
-            <a href="https://pure-harvest-project.vercel.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/pure-harvest" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="box tilt">
-      <img draggable="false" src="images/cyber-punk.jpg" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Cyber Punk Home Page</h3>
-        </div>
-        <div class="desc">
-          <p>A dynamic web application inspired by a futuristic cyberpunk theme, developed using HTML, CSS, JavaScript, MySQL,and PHP</p>
-          <div class="btns">
-            <a href="https://cyber-punk-project.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/cyber-punk" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="box tilt">
-      <img draggable="false" src="images/enclave.jpg" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Enclave Home Page</h3>
-        </div>
-        <div class="desc">
-          <p>A unique custom cursor effect that follows users’ movements, adding a playful and interactive element to the browsing experience.</p>
-          <div class="btns">
-            <a href="https://enclave-ruby.vercel.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/enclave" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="box tilt">
-      <img draggable="false" src="images/protfolio_website.png" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="https://vatsalkansagara.vercel.app" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="https://github.com/VatsalKansagara/Myprotfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>  
-
+  </div>
 </section>
 <!-- work project section ends -->
+
 
 <!-- experience section starts -->
 <section class="experience" id="experience">
@@ -479,20 +408,21 @@
 
   <div class="timeline">
 
-    <!-- ...existing code... -->
-
 <div class="container right">
   <div class="content">
     <div class="tag">
-      <h2>Credapp Software Pvt. Ltd</h2>
+      <h2>Sky Productivity Pvt. Ltd.</h2>
     </div>
     <div class="desc">
-      <h3>Web Developer Intern</h3>
-      <p>sola, ahmedabad</p>
-      <p>Jul 2024 – Dec 2024</p>
-      <p>Designed and developed responsive, user-friendly web interfaces as a Front-End Developer using HTML, CSS, JavaScript, jQuery, and Bootstrap
-        <br>Converted complex Figma designs into pixel-perfect web pages.
-      </p>
+      <h3>Jr. Web Developer</h3>
+      <p>Science City, Ahmedabad</p>
+      <p>Jan 2025 – Present</p>
+      <ul>
+        <li>Developed high-performance, responsive UIs using JavaScript and Bootstrap for complex web layouts.</li>
+        <li>Optimized front-end performance by refining code architecture, resulting in a 20% reduction in page load times.</li>
+        <li>Collaborated with back-end teams to integrate RESTful APIs and dynamic data using AJAX.</li>
+        <li>Maintained clean and scalable code using Git for version control.</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -500,14 +430,16 @@
 <div class="container left">
   <div class="content">
     <div class="tag">
-      <h2>Sky Productivity Pvt. Ltd.</h2>
+      <h2>Credapp Software Pvt. Ltd.</h2>
     </div>
     <div class="desc">
-      <h3>Jr. Web Developer</h3>
-      <p>science city, ahmedabad</p>
-      <p>Jan 2025 – Present</p>
-      <p> Developed responsive and visually appealing user interfaces using HTML, CSS, JavaScript, jQuery, and Bootstrap.
-        Collaborated with designers and back-end developers to deliver seamless and dynamic web applications.</p>
+      <h3>Web Developer Intern</h3>
+      <p>Sola, Ahmedabad</p>
+      <p>Jul 2024 – Dec 2024</p>
+      <ul>
+        <li>Converted intricate Figma wireframes into responsive, cross-browser compatible layouts using HTML5 and CSS3.</li>
+        <li>Maintained existing web portals and fixed bugs to ensure uninterrupted service for users.</li>
+      </ul>
     </div>
   </div>
 </div>
@@ -517,28 +449,29 @@
 </section>
 <!-- experience section ends -->
 
+
 <!-- contact section starts -->
 <section class="contact" id="contact">
-  
+
   <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
   <div class="container">
     <div class="content">
       <div class="image-box">
-        <img draggable="false" src="images/contact1.png" alt="">
+        <img draggable="false" src="images/contact1.webp" alt="" loading="lazy">
       </div>
     <form id="contact-form">
-      
+
       <div class="form-group">
         <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" name="name" placeholder="Name" autocomplete="name" required>
           <i class='fas fa-user'></i>
         </div>
         <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
+          <input type="email" name="email" placeholder="Email" autocomplete="email" required>
           <i class='fas fa-envelope'></i>
         </div>
         <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
+          <input type="tel" name="phone" placeholder="Phone" autocomplete="tel">
           <i class='fas fa-phone-alt'></i>
         </div>
         <div class="message">
@@ -546,9 +479,12 @@
         <i class="fas fa-comment-dots"></i>
         </div>
         </div>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       <div class="button-area">
-        <button type="submit" onclick="gotowhatsapp()">
+        <button type="submit" id="send-btn">
           Submit <i class="fa fa-paper-plane"></i></button>
+        <button type="button" class="wa-btn" id="wa-btn">
+          WhatsApp <i class="fab fa-whatsapp"></i></button>
       </div>
     </form>
   </div>
@@ -564,45 +500,45 @@
 
       <div class="box">
           <h3>Vatsal's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Please wait for a while all major projects will be listed soon. Till then keep visiting. Connect with me over live chat!</p>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
       </div>
 
       <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <h3>Quick Links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> Projects</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a>
+          <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Contact</a>
       </div>
 
       <div class="box">
-          <h3>contact info</h3>
-          
+          <h3>Contact Info</h3>
+
           <p> <i class="fas fa-envelope"></i>vatsalkansagara246@gmail.com</p>
           <p> <i class="fas fa-map-marked-alt"></i>Ahmedabad, India-380001</p>
           <div class="share">
 
-              <a href="https://www.linkedin.com/in/vatsal-kansagara-1ba190287/" class="fab fa-linkedin" target="_blank"></a>
-              <a href="https://github.com/VatsalKansagara/" class="fab fa-github" target="_blank"></a>
-              <a href="mailto:vatsalkansagara246@gmail.com" class="fas fa-envelope" target="_blank"></a>
-              <a href="https://x.com/vatsalpatel1208" class="fab fa-twitter" target="_blank"></a>
-              <a href="https://www.instagram.com/vatsal_kansagara12/" class="fab fa-instagram" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/vatsal-kansagara-1ba190287/" class="fab fa-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"></a>
+              <a href="https://github.com/VatsalKansagara/" class="fab fa-github" target="_blank" rel="noopener" aria-label="GitHub"></a>
+              <a href="mailto:vatsalkansagara246@gmail.com" class="fas fa-envelope" aria-label="Email"></a>
+              <a href="https://x.com/vatsalpatel1208" class="fab fa-twitter" target="_blank" rel="noopener" aria-label="X (Twitter)"></a>
+              <a href="https://www.instagram.com/vatsal_kansagara12/" class="fab fa-instagram" target="_blank" rel="noopener" aria-label="Instagram"></a>
 
           </div>
       </div>
   </div>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://Vatsalmukherjee.bio.link/">Vatsal Kansagara</a></h1>
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="#">Vatsal Kansagara</a></h1>
 
 </section>
 <!-- footer section ends -->
 
 
 <!-- scroll top btn -->
-<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+<a href="#home" class="fas fa-angle-up" id="scroll-top" aria-label="Back to top"></a>
 <!-- scroll back to top -->
 
 
@@ -620,309 +556,11 @@
 <!-- vanilla tilt.js links -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
+<!-- scroll reveal anim (version pinned) -->
+<script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="js/script.js"></script>
 
 </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vatsal Kansagara</title>
-    <link rel="icon" type="image/x-icon" href="images/vklogo.jpg">
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/aos.css"/>
-    <link rel="stylesheet" href="css/line-awesome.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-  </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar"> -->
-    <!-- NAV BAR -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container flex-lg-column">
-        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-          <span class="fw-bold h3 d-block d-lg-none">Vatsal Kansagara</span>
-          <img src="images/profilepic1.jpg" class="d-none d-lg-block rounded-circle profilepic" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!-- //NAV BAR -->
-
-    <!-- CONTENT WRAPPER -->
-    <!-- <div id="content-wrapper"> -->
-      <!-- HOME SECTION -->
-      <!-- <section id="home" class="full-hight px-lg-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-10">
-              <h1 class="text-uppercase display-4 fw-bold" data-aos="fade-up">
-                I'm Vatsal Kansagara, a skilled
-                <span class="text-brand">Front developement</span>
-              </h1>
-              <p class="lead mt-2 mb-3 fs-3" data-aos="fade-up" data-aos-delay="300">
-                I'm delighted to have you here. Explore my work and discover the world of innovative solutions I've crafted.
-              </p>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <a href="#contact" class="btn btn-brand fw-bold me-4"> Contact Me</a>
-                <a href="tel:+919510345505" class="custom-link num"> Call: +91 95103 45505</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- //HOME SECTION -->
-
-      <!-- SERVICES -->
-      <!-- <section id="services" class="full-hight px-lg-5">
-        <div class="container">
-          <div class="row p-4">
-            <div class="col-md-8" data-aos="fade-up">
-              <h6>SERVICES</h6>
-              <h1>Services That I Provide</h1>
-            </div>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up">
-              <div class="bg-base p-4 rounded-4 shadow-effect">
-                <div class="iconbox">
-                  <i class="las la-feather"></i>
-                </div>
-                <h5 class="mt-3 mb-4">Front-End Development</h5>
-                <p>
-                  HTML5, CSS3, JavaScript.<br>
-                  Pixel-perfect UI implementation.<br>
-                  Cross-browser compatibility.
-                </p>
-                <a href="#" class="custom-link">See more</a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6   " data-aos="fade-up" data-aos-delay="300">
-              <div class="bg-base p-4 rounded-4 shadow-effect">
-                <div class="iconbox">
-                  <i class="las la-pencil-ruler"></i>
-                </div>
-                <h5 class="mt-3 mb-4">Website Development</h5>
-                <p>
-                  Custom website design and development. <br>
-                  Responsive and mobile-first design. <br>
-                  Performance optimization.
-                </p>
-                <a href="#" class="custom-link">See more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- //SERVICES -->
-
-      <!-- WORK -->
-      <!-- <section id="work" class="full-hight px-lg-5">
-        <div class="container gy-4">
-          <div class="row p-4">
-            <div class="col-md-8" data-aos="fade-up">
-              <h6>WORK</h6>
-              <h1>My Rectent Projects</h1>
-            </div>
-          </div>
-
-          <div class="row gy-4">
-            <div class="col-md-6 rounded-4" data-aos="fade-up">
-              <div class="card rounded-4 bg-base shadow-effect">
-                <a href="https://charge-up.netlify.app/" target="_blank">
-                  <div class="img rounded-4">
-                    <img src="images/project-1.jpg" class="rounded-4" />
-                  </div>
-                  <div class="card-content p-3">
-                    <h4>Charge Up Home page</h4>
-                    <p class="text-white"> -->
-                      <!-- Charge up website is on base of charge station of car.This website includes many animations and diffrent design.
-                    </p> -->
-                    <!-- <a href="https://charge-up.netlify.app/" class="custom-link" target="_blank">View Project</a>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-md-6 rounded-4" data-aos="fade-up" data-aos-delay="600">
-              <div class="card rounded-4 bg-base shadow-effect">
-                <a href="https://pure-harvest-project.vercel.app/" target="_blank">
-                  <div class="img rounded-4">
-                    <img src="images/project-2.jpg" class="rounded-4" />
-                  </div>
-                  <div class="card-content p-3">
-                    <h4>Pure Harvest Home Page</h4>
-                    <p class="text-white"> -->
-                      <!-- Pure Harvest website is on base of farming. -->
-                    <!-- </p>
-                    <a href="https://pure-harvest-project.vercel.app/" class="custom-link" target="_blank">View Project</a>
-                  </div>
-                </a>  
-              </div>
-            </div>
-
-            <div class="col-md-6 rounded-4" data-aos="fade-up">
-              <div class="card rounded-4 bg-base shadow-effect">
-                <a href="https://cyber-punk-project.netlify.app/" target="_blank">
-                  <div class="img rounded-4">
-                    <img src="images/project-3.jpg" class="rounded-4" />
-                  </div>
-                  <div class="card-content p-3">
-                    <h4>Cyber Punk Home Page</h4>
-                    <a href="https://cyber-punk-project.netlify.app/" class="custom-link" target="_blank">View Project</a>
-                  </div>
-                </a>  
-              </div>
-            </div>
-
-            <div class="col-md-6 rounded-4" data-aos="fade-up" data-aos-delay="600">
-              <div class="card rounded-4 bg-base shadow-effect">
-                <a href="https://enclave-ruby.vercel.app/" target="_blank">
-                  <div class="img rounded-4">
-                    <img src="images/project-4.jpg" class="rounded-4" />
-                  </div>
-                  <div class="card-content p-3">
-                    <h4>Enclave Home Page</h4>
-                    <a href="https://enclave-ruby.vercel.app/" class="custom-link" target="_blank">View Project</a>
-                  </div>
-                </a>  
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- //WORK -->
-
-      <!-- ABOUT -->
-      <!-- <section id="about" class="full-hight px-lg-5">
-        <div class="container gy-4">
-          <div class="row p-4">
-            <div class="col-md-8" data-aos="fade-up">
-              <h6>ABOUT</h6>
-              <h1>Education</h1>
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
-              <div class="bg-base p-4 rounded-4 shadow-effect">
-                <h5 class="mt-3 mb-4">Bsc.It</h5>
-                <h6 class="text-brand">
-                  saurashtra university - Rajkot (2021 - 2024)
-                </h6>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-4">
-            <div class="col-md-12" data-aos="fade-up" data-aos-delay="600">
-              <div class="bg-base p-4 rounded-4 shadow-effect">
-                <h5 class="mt-3 mb-4">Completed HSC</h5>
-                <h6 class="text-brand">
-                  oxford school of science - Amreli (2019 - 2021)
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- //ABOUT -->
-
-      <!-- CONTACT -->
-      <!-- <section id="contact" class="full-hight px-lg-5">
-        <div class="container gy-4">
-          <div class="row justify-content-center text-center p-4">
-            <div class="col-md-8 pb-2 email-left" data-aos="fade-up">
-              <h1>CONTACT ME</h1>
-              <h6>EMAIL : <a href="mailto:vatsalkansagara246@gmail.com">vatsalkansagara246@gmail.com</a></h6>              
-              <h6>NO : <a href="tel:+919510345505"> +919510345505 </a></h6>
-            </div>
-            <div class="col-md-8">
-              <form action="" class="row g-lg-3 gy-2" data-aos="fade-up" data-aos-delay="300">
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" id="name" placeholder="Enter your name " />
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email "/>
-                </div>
-                <div class="col-md-12 form-group">
-                  <input type="text" class="form-control" id="sub" placeholder="Enter your subject "/>
-                </div>
-                <div class="col-md-12 form-group">
-                  <textarea rows="5" id="msg" class="form-control" placeholder="Enter your message "></textarea>
-                </div>
-
-                <div class="col-md-12 form-group d-grid">
-                  <button type="submit"  onclick="gotowhatsapp()" class="btn btn-brand">Contact me</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        </section> -->
-        <!-- //CONTACT -->
-
-        <!-- FOOTER -->
-        <!-- <footer class="px-lg-5 py-4">
-            <div class="container m-4">
-                <div class="row justify-content-between gy-4">
-                    <div class="col-auto mb-0">
-                        <p>Designed By Vatsal Kansagara</p>
-                    </div>
-                    <div class="social-icons col-auto">
-                        <a href="https://www.linkedin.com/in/vatsal-kansagara-1ba190287/" target="_blank"><i class="lab la-linkedin-in"></i></a>
-                        <a href="https://x.com/vatsalpatel1208" target="_blank"><i class="lab la-twitter"></i></a>
-                        <a href="https://www.instagram.com/vatsal_kansagara12/" target="_blank"><i class="lab la-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
-        <!-- //FOOTER -->
-    <!-- </div> -->
-    <!--//CONTENT WRAPPER -->
-
-    <!-- <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/main.js"></script>
-
-    <script>
-      function gotowhatsapp(){
-          var name = document.getElementById('name').value;
-          var email = document.getElementById('email').value;
-          var sub = document.getElementById('sub').value;
-          var msg = document.getElementById('msg').value;
-
-          var url = "https://wa.me/+919510345505?text="+ "Name : "+ name + "%0a" + "Email : "+ email + "%0a" + "Subject : " + sub + "%0a" + "Message : " + msg;
-          window.open(url).focus();
-      }
-  </script>
-</body>
-</html> -->

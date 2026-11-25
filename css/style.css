@@ -7,7 +7,6 @@
   box-sizing: border-box;
   text-decoration: none;
   outline: none; border: none;
-  text-transform:capitalize;
   transition: all .2s linear;
 }
 html{
@@ -126,10 +125,6 @@ header .navbar ul li a:hover{
   display: none;
 }
 @media(max-width:1100px){
- .skills .container .row {
-    grid-template-columns: repeat(4, 1fr) !important;
-  }
-
   .skills {
     height: auto;
   }
@@ -177,9 +172,6 @@ header .navbar ul li a:hover{
   }
   header .navbar.nav-toggle{
     right: 0;
-  }
-  .skills .container .row {
-    grid-template-columns: none !important; 
   }
 }
 /* hamburger icon ends */
@@ -479,9 +471,22 @@ header .navbar ul li a:hover{
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   gap: 1.8rem;
+}
+.skills .container .skill-group {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: rgb(255, 230, 0);
+  margin: 2rem 0 1.4rem 0.4rem;
+}
+.skills .container .skill-group:first-child {
+  margin-top: 0.5rem;
+}
+.skills .container .bar .info img {
+  width: 4.2rem;
+  height: 4.2rem;
+  object-fit: contain;
 }
 .skills .container .bar {
   margin-bottom: 15px;
@@ -1259,3 +1264,160 @@ form .button-area{
     border-radius: 6px;
     z-index: 10;
 }
+/* featured project badge (TikitDesk) */
+.work .box-container .box .featured-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 20;
+  background: #ffd400;
+  color: #1b1b1b;
+  padding: 3px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+.work .box-container .box.featured {
+  box-shadow: 0 0 0 3px #ffd400, 0 .5rem 1rem rgba(225, 219, 219, 0.5);
+}
+
+/* experience bullet points */
+.experience .content .desc ul {
+  margin: .6rem 1.5rem .4rem 0;
+  padding-left: 1.6rem;
+  list-style: disc;
+}
+.experience .content .desc ul li {
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+}
+
+/* contact form status message and WhatsApp button */
+.form-status {
+  margin: 0 1rem;
+  min-height: 2.2rem;
+  font-size: 1.4rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+.form-status.success { color: #1a7f37; }
+.form-status.error { color: #c62828; }
+.form-status.info { color: #2506ad; }
+.button-area button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+.button-area .wa-btn {
+  background: #1fa855;
+  box-shadow: 0px 5px 10px rgba(31, 168, 85, .5);
+  margin-right: 1rem;
+}
+.button-area .wa-btn:hover {
+  background: #168a44;
+}
+.button-area .wa-btn i {
+  top: 3px;
+}
+
+/* respect visitors who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+
+/* ================= NEW: hero CTAs ================= */
+.home .hero-cta { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 1.5rem 0 .5rem; }
+.home .hero-cta .btn { position: static; margin: 0; display: inline-flex; align-items: center; gap: .6rem; line-height: 1; }
+.home .hero-cta .cta-ghost { background: transparent; color: #1858c7; border: 2px solid #1858c7; box-shadow: none; }
+.home .hero-cta .cta-ghost:hover { background: #1858c7; color: #fff; }
+.home .hero-cta .cta-ghost span { font-weight: 700; font-size: 1.7rem; }
+
+/* ================= NEW: about stats ================= */
+.about .row .content p strong { color: #1858c7; }
+.about .stats { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 2rem 0 1rem; }
+.about .stat { flex: 1 1 11rem; text-align: center; padding: 1.2rem 1rem; border-radius: .8rem; background: #fff; box-shadow: 0 .3rem 1.2rem rgba(24, 88, 199, .18); border-top: 4px solid #1858c7; }
+.about .stat b { display: block; font-size: 3.2rem; color: #1858c7; font-family: 'Nunito', sans-serif; line-height: 1.1; }
+.about .stat span { font-size: 1.3rem; color: #444; }
+
+/* ================= NEW: scroll progress bar ================= */
+.scroll-progress { position: fixed; top: 0; left: 0; height: 4px; width: 0; z-index: 10000; background: linear-gradient(90deg, #1858c7, #ffd400); pointer-events: none; }
+
+/* ================= NEW: project showcase (carousel cards) ================= */
+.work .box-container.showcase { align-items: stretch; }
+.work .box-container .box.showcase-card {
+  height: auto; overflow: hidden; display: flex; flex-direction: column;
+  flex: 1 1 46rem; max-width: calc(50% - 1rem); background: #fff;
+}
+.work .box-container .box.showcase-card.featured { flex-basis: 100%; max-width: 100%; }
+.work .box-container .box.showcase-card.featured .car-track img { aspect-ratio: 21 / 9; }
+.carousel { position: relative; background: #0b0b24; }
+.car-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.car-track::-webkit-scrollbar { display: none; }
+.work .box-container .box.showcase-card .car-track img {
+  flex: 0 0 100%; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top;
+  scroll-snap-align: start; cursor: zoom-in;
+}
+.car-btn {
+  position: absolute; top: 50%; transform: translateY(-50%); width: 4rem; height: 4rem; border-radius: 50%;
+  border: 0; cursor: pointer; background: rgba(0, 0, 0, .55); color: #fff; font-size: 1.5rem; z-index: 5; transition: background .3s;
+}
+.car-btn:hover { background: #1858c7; }
+.car-btn.prev { left: 1rem; } .car-btn.next { right: 1rem; }
+.car-count { position: absolute; top: 1rem; right: 1rem; z-index: 5; background: rgba(0, 0, 0, .6); color: #fff; font-size: 1.2rem; padding: .3rem 1rem; border-radius: 2rem; }
+.car-dots { position: absolute; bottom: 1rem; left: 0; right: 0; display: flex; justify-content: center; gap: .6rem; z-index: 5; }
+.car-dots button { width: 1rem; height: 1rem; border-radius: 50%; border: 0; padding: 0; cursor: pointer; background: rgba(255, 255, 255, .5); transition: .3s; }
+.car-dots button.on { background: #ffd400; width: 2.2rem; border-radius: 1rem; }
+
+.work .box-container .box.showcase-card .content {
+  position: static; height: auto; width: 100%; top: auto; background: #fff;
+}
+.work .box-container .box.showcase-card:hover .content { top: auto; }
+.work .box-container .box.showcase-card .content .tag h3 { font-size: 1.9rem; }
+.work .showcase-card .chips { display: flex; flex-wrap: wrap; gap: .6rem; padding: 1.2rem 2rem 0; }
+.work .showcase-card .chips span { font-size: 1.2rem; padding: .3rem 1rem; border-radius: 2rem; background: #e8efff; color: #0f46a2; font-weight: 600; }
+.work .showcase-card .desc { margin: 1rem 2rem 2rem; }
+.work .showcase-card .desc .btns { margin-top: 1.5rem; }
+.work .desc .btns .btn.disabled { background: #888; cursor: not-allowed; opacity: .85; pointer-events: none; }
+.work .showcase-card.coming-soon .car-track { filter: grayscale(.35); }
+.work .featured-badge.soon-badge { background: #ff7a00; color: #fff; }
+
+.more-title { color: #fff; font-size: 2.4rem; text-align: center; margin: 3rem 0 0; }
+.more-title i { color: #ffd400; margin-right: .6rem; }
+
+/* old small projects: first 3 visible, rest behind the toggle */
+.work .more-projects:not(.open) .box:nth-child(n+4) { display: none; }
+.more-toggle-wrap { display: flex; justify-content: center; margin: 0 0 2rem; }
+.more-toggle-wrap .btn {
+  line-height: 1; padding: 1.4rem 3rem; border-radius: .5rem; color: #fff; border: 2px solid #fff; background: transparent;
+  cursor: pointer; font-size: 1.6rem; font-family: 'Nunito', sans-serif; font-weight: 700; transition: .3s;
+}
+.more-toggle-wrap .btn:hover { background: #fff; color: #000; }
+
+/* lightbox */
+.lightbox { position: fixed; inset: 0; z-index: 20000; background: rgba(0, 0, 0, .88); display: none; align-items: center; justify-content: center; padding: 2rem; cursor: zoom-out; }
+.lightbox.open { display: flex; animation: lbIn .25s ease; }
+.lightbox img { max-width: 100%; max-height: 100%; border-radius: .6rem; box-shadow: 0 0 40px rgba(0, 0, 0, .6); }
+.lightbox .lb-close { position: absolute; top: 1.5rem; right: 1.5rem; width: 4.2rem; height: 4.2rem; border-radius: 50%; border: 0; background: #fff; color: #000; font-size: 2rem; cursor: pointer; }
+@keyframes lbIn { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 900px) {
+  .work .box-container .box.showcase-card { max-width: 100%; flex-basis: 100%; }
+  .work .box-container { margin: 1rem; }
+}
+@media (max-width: 480px) {
+  .car-btn { width: 3.2rem; height: 3.2rem; }
+  .work .showcase-card .desc p { font-size: 1.4rem; }
+  .home .hero-cta .btn { padding: 1.4rem 2rem; }
+}
+@media (prefers-reduced-motion: reduce) { .car-track { scroll-behavior: auto; } .lightbox.open { animation: none; } }
+
+/* single e-commerce card */
+.work .more-projects { justify-content: center; }
+.work .more-projects .box { max-width: 46rem; }
